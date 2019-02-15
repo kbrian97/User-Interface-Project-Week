@@ -1,1 +1,230 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+.nav-bar {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 30px;
+}
+.nav-bar .nav {
+  cursor: pointer;
+}
+.nav-bar .nav-hidden {
+  display: none;
+}
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+.home-page-title {
+  background-image: url('../img/home/home-jumbotron.png');
+  background-size: cover;
+  padding: 800px 0px 100px 100px;
+}
+.home-page-title h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.reverse-content .content {
+  display: flex;
+  padding: 5% 18%;
+}
+.reverse-content .B {
+  flex-direction: row-reverse;
+}
+.reverse-content h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.projects .proj {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 18%;
+}
+.projects .Villas {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+  margin-left: 18%;
+  margin-bottom: 5%;
+  background-image: url('../img/home/home-villas-img.png');
+  padding: 200px 0px 25px 0px;
+  width: 65%;
+}
+.projects .Villas h3 {
+  position: absolute;
+  background-color: grey;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+.projects .Out {
+  background-image: url('../img/home/home-outskirts-img.png');
+  padding: 200px 0px 25px 0px;
+  width: 65%;
+  margin-bottom: 10%;
+  margin-left: 18%;
+}
+.projects .Out h3 {
+  position: absolute;
+  background-color: grey;
+  padding: 20px;
+}
+.projects .block {
+  background-image: url('../img/home/home-the-blocks-img.png');
+  padding: 200px 0px 25px 0px;
+  width: 65%;
+  margin-bottom: 10%;
+  margin-left: 18%;
+}
+.projects .block h3 {
+  position: absolute;
+  background-color: grey;
+  padding: 20px;
+}
+.footer {
+  background-color: grey;
+}
+.footer .top-foot {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+}
