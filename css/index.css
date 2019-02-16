@@ -150,10 +150,21 @@ h1 {
   font-size: 2rem;
   color: white;
 }
+.pages {
+  position: absolute;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-left: 25%;
+  display: none;
+}
+a {
+  padding: 10px;
+}
 .home-page-title {
   background-image: url('../img/home/home-jumbotron.png');
   background-size: cover;
-  padding: 800px 0px 100px 100px;
+  padding: 800px 0px 100px 18%;
 }
 .home-page-title h2 {
   font-weight: bold;
@@ -171,6 +182,13 @@ h1 {
   font-size: 1.4rem;
   font-weight: bold;
 }
+.projects p {
+  display: flex;
+  margin-bottom: 4%;
+  justify-content: center;
+  margin-left: 40%;
+  width: 20%;
+}
 .projects .proj {
   font-size: 1.4rem;
   font-weight: bold;
@@ -181,7 +199,7 @@ h1 {
   justify-content: flex-end;
   margin-top: 5%;
   margin-left: 18%;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
   background-image: url('../img/home/home-villas-img.png');
   padding: 200px 0px 25px 0px;
   width: 65%;
@@ -190,41 +208,102 @@ h1 {
   position: absolute;
   background-color: grey;
   padding: 20px;
-  margin-bottom: 5%;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .projects .Out {
   background-image: url('../img/home/home-outskirts-img.png');
   padding: 200px 0px 25px 0px;
   width: 65%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
   margin-left: 18%;
 }
 .projects .Out h3 {
   position: absolute;
   background-color: grey;
   padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .projects .block {
+  display: flex;
+  justify-content: flex-end;
   background-image: url('../img/home/home-the-blocks-img.png');
   padding: 200px 0px 25px 0px;
   width: 65%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
   margin-left: 18%;
 }
 .projects .block h3 {
   position: absolute;
   background-color: grey;
   padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.SJ {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.FD {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.btn {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 9px;
 }
 .footer {
   background-color: grey;
+  color: white;
 }
 .footer .top-foot {
   display: flex;
   width: 100%;
+  height: 200px;
+  padding: 50px 0px 30px;
   justify-content: space-evenly;
 }
 .footer .copyright {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
+}
+.footer .user-interest {
+  display: flex;
+  flex-direction: column;
+}
+.footer .fl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer .cali {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer .ny {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer .talk {
+  padding: 20px 0px;
+}
+.footer h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.footer input {
+  padding: 10px 0px 10px 5px;
+  border-radius: 8px;
+  color: grey;
 }
