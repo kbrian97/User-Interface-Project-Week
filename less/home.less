@@ -3,6 +3,11 @@
     background-size: cover;
     padding: 800px 0px 100px 18%;
 
+    @media @max500 {
+        background-image: url('../img/home/home-mobile-jumbotron.png');
+        padding: 150px 0px 60px 1%;
+    }
+
     h2 {
         font-weight: bold;
         font-size: 4rem;
@@ -17,10 +22,25 @@
     .content {
         display: flex;
         padding: 5% 18%;
+
+        @media @max500 {
+            padding: 15%;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .A {
+        @media @max500 {
+            padding-bottom: 0%;
+        }
     }
 
     .B {
         flex-direction: row-reverse;
+
+        @media @max500 {
+            flex-direction: column-reverse;
+        }
     }
 
     h3 {
@@ -38,12 +58,22 @@
         justify-content: center;
         margin-left: 40%;
         width: 20%;
+
+        @media @max500 {
+            margin-top: 15%;
+            margin-left: 25%;
+            width: 50%;
+        }
     }
     
     .proj {
         font-size: 1.4rem;
         font-weight: bold;
         margin-left: 18%;
+
+        @media @max500 {
+            margin-left: 5%;
+        }
     }
 
     .Villas {
@@ -55,12 +85,27 @@
         background-image: url('../img/home/home-villas-img.png');
         padding: 200px 0px 25px 0px;
         width: 65%;
+
+        @media @max500 {
+            background-image: url('../img/home/home-mobile-villas-img.png');
+            background-size: cover;
+            margin: 0%;
+            padding-right: 35%;
+        }
+
         h3 {
             position: absolute;
             background-color: grey;
             padding: 20px;
             font-size: 1.2rem;
             font-weight: bold;
+
+            @media @max500 {
+                padding: 7% 30% 5% 25%; 
+                font-size: 1.4rem;
+                left: 5%;
+            }
+
         }
     }
 
@@ -70,12 +115,29 @@
         width: 65%;
         margin-bottom: 6%;
         margin-left: 18%;
+
+        @media @max500 {
+            background-image: url('../img/home/home-mobile-outskirts-img.png');
+            background-size: cover;
+            margin: 0%;
+            padding-right: 35%;
+            display: flex;
+            justify-content: flex-end;
+        } 
+
         h3 {
             position: absolute;
             background-color: grey;
             padding: 20px;
             font-size: 1.2rem;
         font-weight: bold;
+
+        @media @max500 {
+            padding: 7% 30% 5% 25%; 
+            font-size: 1.4rem;
+            left: 5%;
+        }
+        
         }
     }
 
@@ -87,29 +149,56 @@
         width: 65%;
         margin-bottom: 6%;
         margin-left: 18%;
+
+        @media @max500 {
+            background-image: url('../img/home/home-mobile-the-blocks-img.png');
+            background-size: cover;
+            margin: 0%;
+            padding-right: 35%;
+        }
+
         h3 {
             position: absolute;
             background-color: grey;
             padding: 20px;
             font-size: 1.2rem;
         font-weight: bold;
+
+        @media @max500 {
+            padding: 7% 30% 5% 25%; 
+            font-size: 1.4rem;
+            left: 5%;
+        }
+
         }
     }
 
 }
 
 .SJ {
-    padding-right: 30px;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    @media @max500 {
+        padding-right: 0%;
+        padding-top: 5%;
+        height: 200px;
+    }
+
 }
 
 .FD {
-    padding-left: 30px;
+    padding-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    @media @max500 {
+        padding-left: 0%;
+        height: 200px;
+    }
 }
 
 .btn {
@@ -118,4 +207,8 @@
     justify-content: center;
     width: 30%;
     padding: 9px;
+
+    @media @max500{
+        width: 95%;
+    }
 }

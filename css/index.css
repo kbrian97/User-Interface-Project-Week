@@ -138,10 +138,11 @@ table {
   background-color: grey;
   display: flex;
   justify-content: space-between;
-  padding: 0% 30px;
+  padding: 0% 5%;
 }
 .nav-bar .nav {
   cursor: pointer;
+  padding: 10px 0px;
 }
 .nav-bar .nav-hidden {
   display: none;
@@ -160,11 +161,18 @@ h1 {
 }
 a {
   padding: 10px;
+  text-decoration: none;
 }
 .home-page-title {
   background-image: url('../img/home/home-jumbotron.png');
   background-size: cover;
   padding: 800px 0px 100px 18%;
+}
+@media (max-width: 500px) {
+  .home-page-title {
+    background-image: url('../img/home/home-mobile-jumbotron.png');
+    padding: 150px 0px 60px 1%;
+  }
 }
 .home-page-title h2 {
   font-weight: bold;
@@ -175,8 +183,24 @@ a {
   display: flex;
   padding: 5% 18%;
 }
+@media (max-width: 500px) {
+  .reverse-content .content {
+    padding: 15%;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .reverse-content .A {
+    padding-bottom: 0%;
+  }
+}
 .reverse-content .B {
   flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .reverse-content .B {
+    flex-direction: column-reverse;
+  }
 }
 .reverse-content h3 {
   font-size: 1.4rem;
@@ -189,10 +213,22 @@ a {
   margin-left: 40%;
   width: 20%;
 }
+@media (max-width: 500px) {
+  .projects p {
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 50%;
+  }
+}
 .projects .proj {
   font-size: 1.4rem;
   font-weight: bold;
   margin-left: 18%;
+}
+@media (max-width: 500px) {
+  .projects .proj {
+    margin-left: 5%;
+  }
 }
 .projects .Villas {
   display: flex;
@@ -204,12 +240,27 @@ a {
   padding: 200px 0px 25px 0px;
   width: 65%;
 }
+@media (max-width: 500px) {
+  .projects .Villas {
+    background-image: url('../img/home/home-mobile-villas-img.png');
+    background-size: cover;
+    margin: 0%;
+    padding-right: 35%;
+  }
+}
 .projects .Villas h3 {
   position: absolute;
   background-color: grey;
   padding: 20px;
   font-size: 1.2rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .projects .Villas h3 {
+    padding: 7% 30% 5% 25%;
+    font-size: 1.4rem;
+    left: 5%;
+  }
 }
 .projects .Out {
   background-image: url('../img/home/home-outskirts-img.png');
@@ -218,12 +269,29 @@ a {
   margin-bottom: 6%;
   margin-left: 18%;
 }
+@media (max-width: 500px) {
+  .projects .Out {
+    background-image: url('../img/home/home-mobile-outskirts-img.png');
+    background-size: cover;
+    margin: 0%;
+    padding-right: 35%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
 .projects .Out h3 {
   position: absolute;
   background-color: grey;
   padding: 20px;
   font-size: 1.2rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .projects .Out h3 {
+    padding: 7% 30% 5% 25%;
+    font-size: 1.4rem;
+    left: 5%;
+  }
 }
 .projects .block {
   display: flex;
@@ -234,6 +302,14 @@ a {
   margin-bottom: 6%;
   margin-left: 18%;
 }
+@media (max-width: 500px) {
+  .projects .block {
+    background-image: url('../img/home/home-mobile-the-blocks-img.png');
+    background-size: cover;
+    margin: 0%;
+    padding-right: 35%;
+  }
+}
 .projects .block h3 {
   position: absolute;
   background-color: grey;
@@ -241,17 +317,37 @@ a {
   font-size: 1.2rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .projects .block h3 {
+    padding: 7% 30% 5% 25%;
+    font-size: 1.4rem;
+    left: 5%;
+  }
+}
 .SJ {
-  padding-right: 30px;
+  padding-right: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .SJ {
+    padding-right: 0%;
+    padding-top: 5%;
+    height: 200px;
+  }
+}
 .FD {
-  padding-left: 30px;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .FD {
+    padding-left: 0%;
+    height: 200px;
+  }
 }
 .btn {
   border: 1px solid black;
@@ -260,9 +356,19 @@ a {
   width: 30%;
   padding: 9px;
 }
+@media (max-width: 500px) {
+  .btn {
+    width: 95%;
+  }
+}
 .footer {
   background-color: grey;
   color: white;
+}
+@media (max-width: 500px) {
+  .footer {
+    padding: 0px 5%;
+  }
 }
 .footer .top-foot {
   display: flex;
@@ -271,10 +377,21 @@ a {
   padding: 50px 0px 30px;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .footer .top-foot {
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .footer .copyright {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .footer .copyright {
+    justify-content: flex-start;
+  }
 }
 .footer .user-interest {
   display: flex;
@@ -285,15 +402,30 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .footer .fl {
+    height: 200px;
+  }
+}
 .footer .cali {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .footer .cali {
+    height: 200px;
+  }
+}
 .footer .ny {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .footer .ny {
+    height: 200px;
+  }
 }
 .footer .talk {
   padding: 20px 0px;
@@ -302,8 +434,18 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .footer h4 {
+    font-size: 1.8rem;
+  }
+}
 .footer input {
   padding: 10px 0px 10px 5px;
   border-radius: 8px;
   color: grey;
+}
+@media (max-width: 500px) {
+  .footer input {
+    width: 90%;
+  }
 }
