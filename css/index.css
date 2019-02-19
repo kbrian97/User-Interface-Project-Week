@@ -367,6 +367,7 @@ a {
   justify-content: center;
   width: 30%;
   padding: 9px;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .btn {

@@ -23,7 +23,7 @@ class TabLink {
 
     select() {
         // Get all of the elements with the services-btn class
-        const buttons = document.querySelectorAll('.services-btn');
+        const buttons = document.querySelectorAll('.btn');
 
         // Using a loop or the forEach method remove the 'selected' class from all of the links
         buttons.forEach(button => {
