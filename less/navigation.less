@@ -1,8 +1,12 @@
 .nav-bar {
+    position: fixed;
     background-color: grey;
+    opacity: 0.8;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 0% 5%;
+    width: 90%;
 
 
     .nav{
@@ -13,6 +17,11 @@
     .nav-hidden {
         display: none;
     }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 h1 {
@@ -20,14 +29,21 @@ h1 {
     color: white;
 }
 
+
 .pages {
-    position: absolute;
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    margin-left: 25%;
     display: none;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        color: white;
+        font-size: 2rem;
+        padding: 3%;
+    }
 }
+
 
 a {
     padding: 10px;
