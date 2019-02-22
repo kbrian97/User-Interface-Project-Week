@@ -137,7 +137,7 @@ table {
 .nav-bar {
   position: fixed;
   background-color: grey;
-  opacity: 0.8;
+  opacity: 0.7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,7 +178,7 @@ a {
 .home-page-title {
   background-image: url('../img/home/home-jumbotron.png');
   background-size: cover;
-  padding: 40% 5% 5% 18%;
+  padding: 30% 5% 10% 18%;
 }
 @media (max-width: 500px) {
   .home-page-title {
@@ -468,8 +468,19 @@ a {
   background-size: cover;
   padding: 20% 0% 3% 6%;
 }
+@media (max-width: 500px) {
+  .services-page .jumbo {
+    background-image: url(../img/services/services-mobile-jumbotron.png);
+    padding: 60% 0% 5% 6%;
+  }
+}
 .services-page .services-indep {
-  padding: 5% 6%;
+  padding: 5% 7%;
+}
+@media (max-width: 500px) {
+  .services-page .services-indep {
+    padding: 6%;
+  }
 }
 .services-page .service-content {
   display: none;
@@ -479,17 +490,36 @@ a {
   justify-content: space-around;
   padding: 5% 0%;
 }
+@media (max-width: 500px) {
+  .services-page .show {
+    padding: 6%;
+    flex-direction: column;
+  }
+}
 .services-page .services-btn {
   display: flex;
   justify-content: space-around;
   width: 95%;
-  padding: 0% 1%;
+  padding: 0% 2%;
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .services-page .services-btn {
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
 }
 .services-page .btn {
   width: 12%;
   cursor: pointer;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .services-page .btn {
+    width: 80%;
+    margin-right: 5%;
+  }
 }
 .services-page .selected {
   background-color: teal;
@@ -501,7 +531,17 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .services-page .construct-words {
+    width: 95%;
+  }
+}
 .services-page .construct-words h3 {
   font-size: 1.6rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .services-page .construct-words p {
+    padding: 5% 0%;
+  }
 }

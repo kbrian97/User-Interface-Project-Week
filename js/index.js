@@ -3,6 +3,12 @@ let nav = document.querySelectorAll('.nav');
 let pages = document.querySelector('.pages');
 let bar = document.querySelector('.nav-bar');
 let project = document.querySelector('.projects');
+let title =  document.querySelectorAll('.pages a');
+
+TweenLite.from(bar, 5, {y: 600}).delay(3);
+TweenLite.from(bar, 5, {opacity: 0}).delay(3);
+TweenLite.from(document.querySelector('body'), 3, {opacity: 0.5});
+
 
 class TabLink {
     constructor(element) {
@@ -62,13 +68,14 @@ for(let i = 0; i < nav.length; i++) {
     nav[i].addEventListener('click', () => {
         nav[0].classList.toggle('nav-hidden');
         nav[1].classList.toggle('nav-hidden');
+        TweenLite.to(bar, 2, {opacity: 1});
         pages.style.display = 'flex';
-        bar.style.opacity = '1';
         project.style.display = 'none';
     })
     nav[1].addEventListener('click', () => {
         pages.style.display = 'none';
         project.style.display = 'block';
+        TweenLite.to(bar, 2, {opacity: 0.7});
     })
 }
 
