@@ -4,10 +4,13 @@ let pages = document.querySelector('.pages');
 let bar = document.querySelector('.nav-bar');
 let project = document.querySelector('.projects');
 let title =  document.querySelectorAll('.pages a');
+let imgTitle = document.querySelectorAll('.home-page-title h2');
+let jumbo = document.querySelector('.jumbo h2');
 
-TweenLite.from(bar, 5, {y: 600}).delay(3);
-TweenLite.from(bar, 5, {opacity: 0}).delay(3);
-TweenLite.from(document.querySelector('body'), 3, {opacity: 0.5});
+TweenMax.staggerFrom(imgTitle, 3, {x: 200, opacity: 0}, 0.5);
+TweenLite.from(bar, 5, {opacity: 0, y: 500}).delay(3);
+TweenLite.from(document.querySelector('body'), 3, {opacity: 0.3});
+
 
 
 class TabLink {
@@ -55,9 +58,11 @@ class TabLink {
         // Remove the class "tabs-item-selected" from each element
         items.forEach(item => {
             item.classList.remove('show');
+            TweenLite.from(item, 3, {opacity:0});
                 })
         // Add a class named "show" to this element 
         this.element.classList.add('show');
+        TweenLite.to(this.element, 3, {opacity: 1});
     }
 }
 
@@ -69,6 +74,7 @@ for(let i = 0; i < nav.length; i++) {
         nav[0].classList.toggle('nav-hidden');
         nav[1].classList.toggle('nav-hidden');
         TweenLite.to(bar, 2, {opacity: 1});
+        TweenLite.to(imgTitle, 1, {opacity: 0});
         pages.style.display = 'flex';
         project.style.display = 'none';
     })
@@ -76,7 +82,9 @@ for(let i = 0; i < nav.length; i++) {
         pages.style.display = 'none';
         project.style.display = 'block';
         TweenLite.to(bar, 2, {opacity: 0.7});
+        TweenLite.to(imgTitle, 1, {opacity: 1});
     })
 }
 
 let links = document.querySelectorAll('.btn').forEach( link => new TabLink(link));
+
