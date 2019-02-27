@@ -141,12 +141,11 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0% 5%;
-  width: 90%;
+  width: 100%;
 }
 .nav-bar .nav {
   cursor: pointer;
-  padding: 10px 0px;
+  padding: 10px 5px;
 }
 .nav-bar .nav-hidden {
   display: none;
@@ -175,6 +174,10 @@ a {
   padding: 10px;
   text-decoration: none;
 }
+.home {
+  margin: 0 auto;
+  max-width: 880px;
+}
 .home-page-title {
   background-image: url('../img/home/home-jumbotron.png');
   background-size: cover;
@@ -193,7 +196,7 @@ a {
 }
 .reverse-content .content {
   display: flex;
-  padding: 5% 18%;
+  padding: 5% 15%;
 }
 @media (max-width: 500px) {
   .reverse-content .content {
@@ -223,7 +226,7 @@ a {
   margin-bottom: 4%;
   justify-content: center;
   margin-left: 40%;
-  width: 20%;
+  width: 30%;
 }
 @media (max-width: 500px) {
   .projects p {
@@ -235,7 +238,7 @@ a {
 .projects .proj {
   font-size: 1.4rem;
   font-weight: bold;
-  margin-left: 18%;
+  margin-left: 15%;
 }
 @media (max-width: 500px) {
   .projects .proj {
@@ -246,11 +249,11 @@ a {
   display: flex;
   justify-content: flex-end;
   margin-top: 5%;
-  margin-left: 18%;
+  margin-left: 15%;
   margin-bottom: 6%;
   background-image: url('../img/home/home-villas-img.png');
   padding: 200px 0px 25px 0px;
-  width: 65%;
+  width: 80%;
 }
 @media (max-width: 500px) {
   .projects .Villas {
@@ -277,9 +280,9 @@ a {
 .projects .Out {
   background-image: url('../img/home/home-outskirts-img.png');
   padding: 200px 0px 25px 0px;
-  width: 65%;
+  width: 80%;
   margin-bottom: 6%;
-  margin-left: 18%;
+  margin-left: 15%;
 }
 @media (max-width: 500px) {
   .projects .Out {
@@ -310,7 +313,7 @@ a {
   justify-content: flex-end;
   background-image: url('../img/home/home-the-blocks-img.png');
   padding: 200px 0px 25px 0px;
-  width: 65%;
+  width: 80%;
   margin-bottom: 6%;
   margin-left: 18%;
 }
@@ -365,7 +368,7 @@ a {
   border: 1px solid black;
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 70%;
   padding: 9px;
   cursor: pointer;
 }
