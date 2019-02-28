@@ -461,6 +461,9 @@ a {
   border-radius: 8px;
   color: grey;
 }
+.services-page {
+  height: 100vh;
+}
 .services-page h2 {
   font-weight: bold;
   font-size: 4rem;
