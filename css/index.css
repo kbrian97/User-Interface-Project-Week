@@ -1,1 +1,553 @@
-/* Should be empty until you compile your LESS */
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0b1 | 201101 
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+.nav-bar {
+  position: fixed;
+  background-color: grey;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-bar .nav {
+  cursor: pointer;
+  padding: 10px 5px;
+}
+.nav-bar .nav-hidden {
+  display: none;
+}
+.nav-bar .title {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+.pages {
+  display: none;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pages a {
+  color: white;
+  font-size: 2rem;
+  padding: 3%;
+}
+a {
+  padding: 10px;
+  text-decoration: none;
+}
+.home {
+  margin: 0 auto;
+  max-width: 880px;
+}
+.home-page-title {
+  background-image: url('../img/home/home-jumbotron.png');
+  background-size: cover;
+  padding: 30% 5% 10% 18%;
+}
+@media (max-width: 500px) {
+  .home-page-title {
+    background-image: url('../img/home/home-mobile-jumbotron.png');
+    padding: 150px 0px 60px 1%;
+  }
+}
+.home-page-title h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.reverse-content .content {
+  display: flex;
+  padding: 5% 15%;
+}
+@media (max-width: 500px) {
+  .reverse-content .content {
+    padding: 15%;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .reverse-content .A {
+    padding-bottom: 0%;
+  }
+}
+.reverse-content .B {
+  flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .reverse-content .B {
+    flex-direction: column-reverse;
+  }
+}
+.reverse-content h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.projects p {
+  display: flex;
+  margin-bottom: 4%;
+  justify-content: center;
+  margin-left: 40%;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .projects p {
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 50%;
+  }
+}
+.projects .proj {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  .projects .proj {
+    margin-left: 5%;
+  }
+}
+.projects .Villas {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-bottom: 6%;
+  background-image: url('../img/home/home-villas-img.png');
+  padding: 200px 0px 25px 0px;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .projects .Villas {
+    background-image: url('../img/home/home-mobile-villas-img.png');
+    background-size: cover;
+    margin: 0%;
+    padding-right: 35%;
+  }
+}
+.projects .Villas h3 {
+  position: absolute;
+  background-color: grey;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .projects .Villas h3 {
+    padding: 7% 30% 5% 25%;
+    font-size: 1.4rem;
+    left: 5%;
+  }
+}
+.projects .Out {
+  background-image: url('../img/home/home-outskirts-img.png');
+  padding: 200px 0px 25px 0px;
+  width: 80%;
+  margin-bottom: 6%;
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  .projects .Out {
+    background-image: url('../img/home/home-mobile-outskirts-img.png');
+    background-size: cover;
+    margin: 0%;
+    padding-right: 35%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.projects .Out h3 {
+  position: absolute;
+  background-color: grey;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .projects .Out h3 {
+    padding: 7% 30% 5% 25%;
+    font-size: 1.4rem;
+    left: 5%;
+  }
+}
+.projects .block {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url('../img/home/home-the-blocks-img.png');
+  padding: 200px 0px 25px 0px;
+  width: 80%;
+  margin-bottom: 6%;
+  margin-left: 18%;
+}
+@media (max-width: 500px) {
+  .projects .block {
+    background-image: url('../img/home/home-mobile-the-blocks-img.png');
+    background-size: cover;
+    margin: 0%;
+    padding-right: 35%;
+  }
+}
+.projects .block h3 {
+  position: absolute;
+  background-color: grey;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .projects .block h3 {
+    padding: 7% 30% 5% 25%;
+    font-size: 1.4rem;
+    left: 5%;
+  }
+}
+.SJ {
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .SJ {
+    padding-right: 0%;
+    padding-top: 5%;
+    height: 200px;
+  }
+}
+.FD {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .FD {
+    padding-left: 0%;
+    height: 200px;
+  }
+}
+.btn {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 9px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 95%;
+  }
+}
+.footer {
+  background-color: grey;
+  color: white;
+}
+@media (max-width: 500px) {
+  .footer {
+    padding: 0px 5%;
+  }
+}
+.footer .top-foot {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  padding: 50px 0px 30px;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .footer .top-foot {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .footer .copyright {
+    justify-content: flex-start;
+  }
+}
+.footer .user-interest {
+  display: flex;
+  flex-direction: column;
+}
+.footer .fl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .footer .fl {
+    height: 200px;
+  }
+}
+.footer .cali {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .footer .cali {
+    height: 200px;
+  }
+}
+.footer .ny {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .footer .ny {
+    height: 200px;
+  }
+}
+.footer .talk {
+  padding: 20px 0px;
+}
+.footer h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .footer h4 {
+    font-size: 1.8rem;
+  }
+}
+.footer input {
+  padding: 10px 0px 10px 15px;
+  width: 90%;
+  border-radius: 8px;
+  color: grey;
+}
+.services-page {
+  height: 100vh;
+}
+.services-page h2 {
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+.services-page .jumbo {
+  background-image: url(../img/services/services-jumbotron.png);
+  background-size: cover;
+  padding: 20% 0% 3% 6%;
+}
+@media (max-width: 500px) {
+  .services-page .jumbo {
+    background-image: url(../img/services/services-mobile-jumbotron.png);
+    padding: 60% 0% 5% 6%;
+  }
+}
+.services-page .services-indep {
+  padding: 5% 7%;
+}
+@media (max-width: 500px) {
+  .services-page .services-indep {
+    padding: 6%;
+  }
+}
+.services-page .service-content {
+  display: none;
+}
+.services-page .show {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 0%;
+}
+@media (max-width: 500px) {
+  .services-page .show {
+    padding: 6%;
+    flex-direction: column;
+  }
+}
+.services-page .services-btn {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  padding: 0% 2%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .services-page .services-btn {
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+}
+.services-page .btn {
+  width: 12%;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .services-page .btn {
+    width: 80%;
+    margin-right: 5%;
+  }
+}
+.services-page .selected {
+  background-color: teal;
+  color: white;
+}
+.services-page .construct-words {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .services-page .construct-words {
+    width: 95%;
+  }
+}
+.services-page .construct-words h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .services-page .construct-words p {
+    padding: 5% 0%;
+  }
+}

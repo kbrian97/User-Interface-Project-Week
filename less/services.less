@@ -1,0 +1,97 @@
+.services-page {
+        height: 100vh;        
+    
+    h2 {
+        font-weight: bold;
+        font-size: 4rem;
+        color: white;
+    }
+
+.jumbo {
+    background-image: url(../img/services/services-jumbotron.png);
+    background-size: cover;
+    padding: 20% 0% 3% 6%;
+
+    @media @max500 {
+        background-image: url(../img/services/services-mobile-jumbotron.png);
+        padding: 60% 0% 5% 6%;
+    }
+}
+
+.services-indep {
+    padding: 5% 7%;
+
+    @media @max500 {
+        padding: 6%;
+    }
+}
+
+.service-content {
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0%;
+    @media @max500 {
+    padding: 6%;
+    flex-direction: column;
+    }
+}
+
+.services-btn {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    padding: 0% 2%;
+    margin-bottom: 2%;
+
+    @media @max500 {
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+}
+
+.btn{
+    width: 12%;
+    cursor: pointer;
+    font-weight: bold;
+
+    @media @max500 {
+        width: 80%;
+        margin-right: 5%; 
+    }
+}
+
+.selected {
+    background-color: teal;
+    color: white;
+}
+
+.construct-words{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media @max500 {
+        width: 95%;
+    }
+
+    h3{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    p {
+       
+        @media @max500 {
+            padding: 5% 0%;
+        }
+    }
+}
+
+}
+
